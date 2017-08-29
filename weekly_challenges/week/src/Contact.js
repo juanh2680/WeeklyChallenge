@@ -31,7 +31,7 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <p>You need to contact {this.props.first} {this.props.last} {this.props.phone}<span id={this.state.className}>{this.state.status}</span>
+        <p>You need to contact {this.props.first} {this.props.last} {this.props.phone}<span className={this.state.className}>{this.state.status}</span>
           <button onClick={this.handleClick} disabled={this.state.isButtonDisabled} >Click Here</button>
         </p>
       </div>
